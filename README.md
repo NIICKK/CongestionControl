@@ -8,7 +8,7 @@ we decide to implement a Bittorrent-like protocol to demonstrate its functionali
 
 ## Implementation and Methods
 A virtual network condition will be created and all the network information will be stored inside a configuration file. The configuration file is available at <a href="https://github.com/NIICKK/CongestionControl/blob/master/config.yml"> config.yaml </a>. The protocal will sense the network condition by accessing the configuration file.
-A mutex-like mechanism will be used in case multiple processes access this file at the same time and try to modify it. 
+A mutex-like mechanism will be used in case multiple processes access this file at the same time and try to modify it. Everytime there is an update in the configuration file, a forwarding message will be sent to all the active user. As each user receive the update message they will adjust their behavior upon the least network condition and send an update request to the configuration file.
 
 Rather than use the AIMD method adopted in TCP, we plan to fully use the network capacity at the beginning and adjust it when more network loads are expected.
 
