@@ -1,0 +1,22 @@
+file_info:
+  filename1:
+    file_size: 60
+    hostsWithFile:
+    - {ip: 127.0.0.1, port: 8080}
+    - {ip: 127.0.0.2, port: 8081}
+    - {ip: 127.0.0.3, port: 8082}
+  filename2:
+    file_size: 100
+    hostsWithFile:
+    - {ip: 127.0.0.1, port: 8080}
+    - {ip: 127.0.0.2, port: 8081}
+    - {ip: 127.0.0.3, port: 8082}
+lock: false
+network_info:
+  activeUsers:
+  - {ip: 127.0.0.1, port: 8080}
+  - {ip: 127.0.0.2, port: 8081}
+  - {ip: 127.0.0.3, port: 8082}
+  available: 100
+  bandwidth: 100
+  thredshold: 80
