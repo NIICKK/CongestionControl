@@ -15,19 +15,19 @@ def unlockConfig(cfg):
 		yaml.dump(cfg, yamlfile)
 
 def allocateBandwidth(activeUsers, available, thredshold):
-	# allocate network bandwidth to each active user
+	# Allocate network bandwidth to each active user
 	# For example, if available bandwidth is 100, and there are three users having the file.
 	# we could assign each user with 33 bandwidth.
 	# And when there is new download requests, we could reallocate the bandwitdh for each user.
 	# For example, if two additional users join, then each user will have 20 bandwidth.
 
-	# For each bandwidth allocation, the config.yaml file must be updatee. When the config.yaml is updating,
+	# For each bandwidth allocation, the config.yaml file must be update. When the config.yaml is updating,
 	# it must be locked, and it should be unlocked after the modification
 	pass
 	# return allocatedBandwidth
 
 def fileDownload(filename, hosts_ips, hosts_ports, allocatedBandwidth):
-	# download the file using udp socket at certain speed, the download speed will be varied upon new download requests (congestion control, we might need constantly call neworkQuery
+	# Download the file using udp socket at certain speed, the download speed will be varied upon new download requests (congestion control, we might need constantly call neworkQuery
 	# here, once there is an update in certain feilds, change the download speeds)
 	# Add reliability to UDP
 	pass
