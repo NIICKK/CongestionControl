@@ -19,4 +19,4 @@ network_info:
   - {ip: 127.0.0.3, port: 8082}
   available: 100
   bandwidth: 100
-  thredshold: 80
+  threshold: 80
