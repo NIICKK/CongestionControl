@@ -154,7 +154,7 @@ class Ui_MainWindow(object):
             # Now set the network status labels
             self.band.setText("{} Mbps".format(cfg["network_info"]["bandwidth"]))
             self.avail.setText("{} Mbps".format(cfg["network_info"]["available"]))
-            self.thresh.setText("{} Mbps".format(cfg["network_info"]["thredshold"]))
+            self.thresh.setText("{} Mbps".format(cfg["network_info"]["threshold"]))
 
             # Set the users table:
             usersNum = len(cfg['network_info']['activeUsers'])
